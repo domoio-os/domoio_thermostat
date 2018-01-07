@@ -1,0 +1,86 @@
+{
+  "project_id": null,
+  "version_id": null,
+  "config": {
+    "fields": null,
+    "extended": []
+  },
+  "manufacturer": null,
+  "ports": [
+    {
+      "io": "output",
+      "name": "4",
+      "notify_changes": false,
+      "flow": "pull",
+      "type": "digital",
+      "id": "4",
+      "controller": null,
+      "behaviour": null,
+      "internal": false
+    },
+    {
+      "io": "output",
+      "name": "5",
+      "notify_changes": false,
+      "flow": "pull",
+      "type": "digital",
+      "id": "5",
+      "controller": null,
+      "behaviour": null,
+      "internal": false
+    },
+    {
+      "io": "input",
+      "name": "Weather",
+      "notify_changes": false,
+      "flow": "push",
+      "type": "analogic",
+      "id": "101",
+      "controller": "weather_stream",
+      "behaviour": null,
+      "internal": false
+    }
+  ],
+  "ui": [
+    {
+      "state_port": "101",
+      "push": null,
+      "name_source": "port",
+      "id": "Weather",
+      "controller": "temperature"
+    },
+    {
+      "state_port": "4",
+      "push": "4",
+      "name_source": "port",
+      "id": "4",
+      "controller": "switch"
+    },
+    {
+      "state_port": "5",
+      "push": "5",
+      "name_source": "port",
+      "id": "5",
+      "controller": "switch"
+    }
+  ],
+  "symbol": {
+    "ports": {
+      "top": [
+        "4",
+        "101"
+      ],
+      "bottom": [
+        "5"
+      ]
+    },
+    "port": {},
+    "icon": null
+  },
+  "sync": false,
+  "controller": "dummy",
+  "description": {
+    "name": null,
+    "hint": null
+  }
+}
