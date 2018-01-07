@@ -1,0 +1,24 @@
+ESP_ROOT=../esp8266
+
+BOARD = nodemcuv2
+FLASH_DEF = 4M3M
+
+UPLOAD_PORT = /dev/tty.SLAB_USBtoUART
+UPLOAD_SPEED=230400
+
+
+SKETCH = ./domoio_thermostat.ino
+LIBS = ${ESP_ROOT}/libraries/ArduinoOTA \
+       ${ESP_ROOT}/libraries/DNSServer/src \
+       ${ESP_ROOT}/libraries/EEPROM \
+       ${ESP_ROOT}/libraries/ESP8266HTTPClient/src \
+       ${ESP_ROOT}/libraries/ESP8266httpUpdate/src \
+       ${ESP_ROOT}/libraries/ESP8266WebServer/src \
+       ${ESP_ROOT}/libraries/ESP8266WiFi/src \
+       ${ESP_ROOT}/libraries/ESP8266WiFi/src \
+       ${ESP_ROOT}/libraries/Ticker \
+
+LD_EXTRA=-L. -ldomoio
+
+
+include ./makeEspArduino.mk
