@@ -1,12 +1,12 @@
 Thermostat Domoio firmware for ESP8266
 ===========================================
-[Domoio](https://domoio.com) is a framework for home automation. This project shows the power of domoio implementing a simple thermostat using the [Domoio client for ESP8266](https://github.com/eloy/domoio_esp8266)
+[Domoio](https://domoio.com) is a framework for home automation. This project shows the power of domoio implementing a simple thermostat using the [Domoio client for ESP8266](https://github.com/domoio-os/domoio_esp8266)
 
 # Upload the firmware
 ## Requirements
 - Arduino IDE. Get the latest version from the [Arduino website](http://www.arduino.cc/en/main/software)
 - The [ESP8266 core for Arduino](https://github.com/esp8266/Arduino)
-- The [Domoio client for ESP8266](https://github.com/eloy/domoio_esp8266) (Optional, the repository already include a precompiled version, libdomoio.a)
+- The [Domoio client for ESP8266](https://github.com/domoio-os/domoio_esp8266) (Optional, the repository already include a precompiled version, libdomoio.a)
 
 ## Setup the Makefile
 Copy and edit Makefile.sample. Visit [https://github.com/plerup/makeEspArduino](https://github.com/plerup/makeEspArduino) for more information about the parameters.
